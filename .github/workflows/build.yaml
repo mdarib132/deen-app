@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: deen-app-fresh
+        working-directory: deen-app-v0.3
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -24,4 +24,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: deen-debug-apk
-          path: deen-app-fresh/app/build/outputs/apk/debug/*.apk
+          path: deen-app-v0.3/app/build/outputs/apk/debug/*.apk
